@@ -14,7 +14,7 @@ def ex_1(n):
 
 
 # TODO
-# Given a function below, analyze it's time complexity in terms of f(n). So that f(n) = √2
+# Given a function below, analyze it's time complexity in terms of f(p). So that f(p) = √n
 # And what is it's order?
 
 # int `i` is always incrementing
@@ -24,6 +24,30 @@ def ex_2(n, p=0, i=1):
         p = p + i
         i += 1
     return p
+
+
+# TODO
+# Given a function below, analyze it's time complexity in terms of f(k). So that f(k) = log2n
+# And what is it's order?
+
+
+def ex_3(n):
+    i = 1
+    while i < n:
+        i *= 2
+    return i
+
+
+# TODO
+# Given a function below, analyze it's time complexity in terms of f(k). So that f(k) = n
+# And what is it's order?
+
+
+def ex_4(n):
+    i = 1
+    while i < n:
+        i += 1
+    return i
 
 
 if __name__ == '__main__':
