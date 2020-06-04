@@ -1,0 +1,52 @@
+- General properties(for all O, Ω, Θ)
+    - if `f(n)` is `O(g(n))` then `a * f(n)` is `O(g(n))`
+    - eg: f(n) = 2n^2 + 5 is O(n^2)
+
+
+- Reflective property(for all O, Ω, Θ):
+    - if `f(n)` is given then `f(n)` is `O(f(n))`
+    - eg: f(n) = n2 => O(n2)
+
+
+- Transitive property(for all O, Ω, Θ):
+    - if `f(n)` is `O(g(n))` and `g(n)` is `O(h(n))` then `f(n) = O(h(n))`
+    - eg: Suppose f(n) = n, g(n) = n^2, h(n) = n^3
+                  n is O(n^2) and n^2 is O(n^3)
+                  then n is O(n^3)
+
+
+- Symmetric property(just for Θ):
+    - if `f(n)` is `Θ(g(n))` then `g(n)` is `Θ(f(n))`
+    - eg: f(n) = n^2           g(n) = n^2
+          f(n) = Θ(n^2)        g(n) = Θ(n^2)
+
+
+- Transpose symmetric(for O, Ω):
+    - if f(n) = O(g(n)) then g(n) is Ω(f(n))
+    - eg:   f(n) = n              g(n) = n^2
+      then  n is O(n^2)           n^2 = Ω(n)
+
+
+=================================================
+if      f(n) = O(g(n))
+and     f(n) = Ω(g(n))
+then    f(n) = Θ(g(n))
+=================================================
+
+
+=================================================
+if      f(n) = O(g(n))
+and     d(n) = O(e(n))
+then    f(n) + d(n) = O(max(g(n), e(n)))
+
+example: suppose f(n) = n; d(n) = n^2
+         then    f(n) + d(n) = n + n^2 => O(n^2)
+=================================================
+
+
+=================================================
+if      f(n) = O(g(n))
+and     d(n) = O(e(n))
+then    f(n) * d(n) = O(g(n) * e(n))
+=================================================
+
