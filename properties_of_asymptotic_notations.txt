@@ -22,7 +22,7 @@
 
 
 - Transpose symmetric(for O, Ω):
-    - if f(n) = O(g(n)) then g(n) is Ω(f(n))
+    - if `f(n) = O(g(n))` then `g(n)` is `Ω(f(n))`
     - eg:   f(n) = n              g(n) = n^2
       then  n is O(n^2)           n^2 = Ω(n)
 
