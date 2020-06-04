@@ -78,5 +78,52 @@ def ex_6(n):
     return i
 
 
+# TODO
+# Given a function below, analyze it's O(). So that O(n)
+
+def ex_7(n):
+    for i in range(n):
+        print(i)    # statement to be executed <= have to count this
+    for j in range(n):
+        print(j)    # statement to be executed <= have to count this
+    return
+
+
+# TODO
+# Given a function below, analyze it's O(). So that O(loglogn)
+
+def ex_8(n):
+    i = 0
+    j = 0
+    p = 0
+    while i < n:
+        i *= 2
+        p += 1
+    while j < p:
+        j *= 2
+        print('Hi')  # statement to be executed <= have to count this
+    return
+
+
+# TODO
+# Given a function below, analyze it's O(). So that O(nlogn)
+
+def ex_9(n):
+    for i in range(n):
+        j = 1
+        while j < n:
+            j *= 2
+            print('Hi')  # statement to be executed <= have to count this
+
+
+# for (i=0; i<n; i++)    =>  O(n)
+# for (i=n; i>1; i--)    =>  O(n)
+# for (i=0; i<n; i=i+2)    =>  n/2  =>  O(n)
+# Because we care only of the degree of polynomial
+# for (i=0; i<n; i=i+200)    =>  n/200  =>  O(n)
+# for (i=0; i<n; i=i*2)    =>  O(log2n)
+# for (i=0; i<n; i=i*3)    =>  O(log3n)
+# for (i=n; i>1; i=i/2)    =>  O(log2n)
+
 if __name__ == '__main__':
     pass
