@@ -1,0 +1,46 @@
+TODO
+Apply 1st method of comparing functions for: n; n^2; n^3
+Apply 2nd method of comparing functions for: n^2; n^3
+
+
+========================================================
+`log` formulas
+--------------
+1. logab = loga + logb
+2. loga/b = loga - logb
+3. loga^b = bloga
+4. a^logbbasec = b^logabasec
+5. a^b = n then b = lognbasea
+========================================================
+
+eg: Given 2 functions: f(n) = n^2logn; g(n) = n(logn)^10
+compare them by applying 2nd method of comparing functions.
+
+
+eg: Given 2 functions: f(n) = 3n^√n; g(n) = 2^√nlogn
+compare them by using formulas of `logs`. (result must be asymptotically equal)
+
+
+eg: Given 2 functions: f(n) = n^logn; g(n) = 2^√n
+compare them by applying 2nd method of comparing functions(twice).
+
+
+eg: Given 2 functions: f(n) = n^logn; g(n) = n^√n
+compare them
+
+
+eg: Given 2 functions: f(n) = n^2; g(n) = n^3
+compare them ASYMPTOTICALLY
+
+
+eg: Given 2 functions: f(n) = n^2; g(n) = 2^2n
+compare them, but be aware that at prev eg you gave ans
+directly from functions. Here you are gonna apply `log`
+
+
+eg: Decide True/False
+1. (n + k)^m = Θ(n^m)
+2. 2^n+1 = O(2^n)
+3. 2^2n = O(2^n)
+4. √logn = O(loglogn)
+5. n^logn = O(2^n)
