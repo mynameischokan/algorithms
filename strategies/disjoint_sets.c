@@ -9,3 +9,6 @@
 // Given two sets
 int s1[] = {1, 2, 3 ,4}
 int s2[] = {5, 6, 7 ,8}
+
+// TODO
+// Analyse what makes circle
