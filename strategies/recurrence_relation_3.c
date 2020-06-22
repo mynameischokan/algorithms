@@ -5,7 +5,7 @@
  *                             In this loop prints `n`
  *                          2. Then calls itself by `-1`.
  *
- * Analyse it's time complexity, so that it is class function of `n^2`.
+ * Analyse it's time complexity, so that it is class function of `nlogn`.
  */
 
 
@@ -15,7 +15,7 @@
 void R1(int n)
 {
 
-}
+};
 
 // TODO
 // What is the T(n)/recurrence relation of R1 function above?
@@ -32,6 +32,7 @@ void R1(int n)
  */
 //  TODO
 //  Solve the Reccurence Realtion using `Recursion Tree`
+//  so that it will stop at: T(3), T(2), T(1), T(0)
 //  What is it's time complexity?
 
 
