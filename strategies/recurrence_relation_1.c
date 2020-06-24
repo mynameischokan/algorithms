@@ -16,7 +16,7 @@ void R1(int n)
 
 int main()
 {
-
+    R1(3);
 }
 
 
