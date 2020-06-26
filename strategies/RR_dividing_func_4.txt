@@ -1,0 +1,42 @@
+========================= MASTERS THEOREM =========================
+
+General Form of recurrence relation in dividing function
+    - T(n) = aT(n/b) + f(n)
+      Assume that: a>=1; b>1; f(n)=Θ((n^k)log^p of n)
+
+From General Form we will find 2 values:
+    - loga baseb
+    - k
+
+Based on this two values above there are 3 cases:
+    - if loga base b > k, then ans is Θ(n^loga base b)
+    - if loga base b = k
+        * if p > -1                   Θ((n^k)log^p+1 of n)
+        * if p = -1                   Θ((n^k)loglogn)
+        * if p < -1                   Θ(n^k)
+    - if loga base b < k
+        * if p >= 0                   Θ((n^k)log^p of n)
+        * if p <  0                   O(n^k)
+
+EXAMPLES
+Applying 1st case:
+    Solve T(n) = 2T(n/2) + 1
+    Solve T(n) = 4T(n/2) + n
+    Solve T(n) = 8T(n/2) + n
+    Solve T(n) = 9T(n/3) + n
+
+
+Applying 2st case:
+    Solve T(n) = 2T(n/2) + n
+    Solve T(n) = 4T(n/2) + n^2
+    Solve T(n) = 4T(n/2) + (n^2)logn
+    Solve T(n) = 4T(n/2) + (n^2)log^2 base n
+    Solve T(n) = 4T(n/2) + (nlogn)^2
+    Solve T(n) = 2T(n/2) + n/logn   HINT: n/logn == n(log^-1 base n)
+    Solve T(n) = 2T(n/2) + n/log^2 base n   NOTE: diff from above eg
+
+
+Applying 3st case:
+    Solve T(n) = 2T(n/2) + n^2
+    Solve T(n) = 2T(n/2) + (n^2)log^2 base n
+    Solve T(n) = 4T(n/2) + n^3/logn
