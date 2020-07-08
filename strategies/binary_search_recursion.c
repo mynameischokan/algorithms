@@ -10,9 +10,10 @@
 
 
 //  Complete the function below using Binary Search recursive method
-int RecursiveBinarySearch(int A[], int n, int key) {
+int RecursiveBinarySearch(int A[], int l, int h, int key) {
     /*  A: array of int elements
-        n: length of given array
+        l: first index of array
+        h: last index of array
         key: element to be searched
 
         returns: int index of element in array
@@ -25,5 +26,8 @@ int RecursiveBinarySearch(int A[], int n, int key) {
 
 int main()
 {
-
+    int A[] = {1, 2, 3, 4, 13, 24, 27, 31};
+    int A_len = sizeof(A)/sizeof(A[0]);
+    int result = RecursiveBinarySearch(A, 0, A_len, 4123);
+    printf("%d", result);
 }

@@ -25,5 +25,8 @@ int BinarySearch(int A[], int n, int key) {
 
 int main()
 {
-
+    int A[] = {1, 2, 3, 4, 13, 24, 27, 31};
+    int A_len = sizeof(A)/sizeof(A[0]);
+    int res = BinarySearch(A, A_len, 5);
+    printf("%d", res);
 }
