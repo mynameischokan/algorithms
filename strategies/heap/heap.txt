@@ -1,0 +1,11 @@
+===========================
+          HEAP
+===========================
+
+1. Array representation of BT
+2. Complete Binary tree
+3. Heap
+4. Insert and Delete
+5. Heap Sort
+6. Heapify
+7. Priority Queue

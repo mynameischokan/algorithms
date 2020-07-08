@@ -1,0 +1,48 @@
+=======================================
+=======================================
+
+Given a Binary tree
+
+                 A
+           B            C
+        D      E    F      G          <===== Complete BT
+
+and it's array representation:
+
+[A, B, C, D, E, F, G]
+
+So the rule of thumb is:
+    - if a Node is at index: i
+    - then left child is at: 2*i
+    -      right           : 2*i+1
+    - it's parent is at    : [i/2]
+
+
+=======================================
+=======================================
+
+                 A
+           B            C
+        D      E                     <===== Complete BT
+
+Representing it in an array by filling level by level is works fine:
+
+            [A, B, C, D, E]
+
+
+=======================================
+=======================================
+
+                 A
+           B            C
+                     D      E         <===== Not Complete BT(has GAPs)
+
+Representing it in an array by filling level by level is a bit tricky:
+
+            [A, B, C, -, -, D, E]
+
+
+=======================================
+=======================================
+
+- High of complete BT will always be: logn
