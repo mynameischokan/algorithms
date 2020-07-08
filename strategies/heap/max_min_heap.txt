@@ -1,0 +1,15 @@
+Max heap:
+    - complete BT
+    - root will have largest value
+    - [50, 30, 20, 15, 10, 8, 16]
+                    50
+                30       20
+             15    10  8    16
+
+Min heap:
+    - complete BT
+    - root will have smallest value
+    - [10, 30, 20, 35, 40, 32, 25]
+                     10
+                30        20
+             35    40  32    25
