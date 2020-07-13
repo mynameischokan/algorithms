@@ -1,0 +1,11 @@
+Heapify - procedure for creating a HEAP
+
+Given an array of complete BT:
+
+[10, 20, 15, 12, 40, 25, 18]
+
+Adjustment goes from `bottom` to `top`.
+
+Creation of HEAP takes      O(nlogn)
+Heapify                     O(n)
+
